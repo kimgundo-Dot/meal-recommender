@@ -1,0 +1,124 @@
+/* 전체 페이지 기본 설정 */
+.App {
+  font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+  padding: 2rem;
+  background-color: #f8f8f8;
+  color: #1f1f1f;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* 제목 */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #2b2e4a;
+}
+
+/* 태그 그룹 구역 */
+.tag-section {
+  background-color: #1f2235;
+  padding: 1.2rem 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+}
+
+/* 태그 그룹 제목 */
+.tag-title {
+  margin-bottom: 0.8rem;
+  font-size: 1.05rem;
+  color: #f5f5f5;
+  font-weight: 600;
+}
+
+/* 태그 버튼 묶음 */
+.tag-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* 태그 버튼 기본 */
+.tag-btn {
+  padding: 8px 16px;
+  border-radius: 10px;
+  background-color: #2d3145;
+  color: #ccc;
+  font-size: 0.92rem;
+  border: 1px solid #444;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* 태그 버튼 호버 */
+.tag-btn:hover {
+  background-color: #3a3f58;
+  color: #fff;
+  border-color: #666;
+}
+
+/* 태그 선택된 경우 */
+.tag-btn.selected {
+  background-color: #fca311;
+  color: #1f1f1f;
+  font-weight: bold;
+  border: none;
+}
+
+/* 추천받기 버튼 */
+button {
+  padding: 10px 20px;
+  background-color: #3a3f58;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 2rem auto;
+  display: block;
+}
+
+button:hover {
+  background-color: #4a5070;
+  transform: scale(1.03);
+}
+
+/* 추천 카드 레이아웃 */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+/* 추천 카드 스타일 */
+.card {
+  background: linear-gradient(to bottom right, #2b2e4a, #1f2235);
+  color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+  transition: 0.3s;
+  border: 1px solid #333;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(255, 255, 255, 0.05);
+}
+
+.card h2 {
+  margin-bottom: 1rem;
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+.total-kcal {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-top: 1.5rem;
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: #e63946; /* 따뜻한 강조 빨강 */
+}
